@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/starwars.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Выберите категорию для запроса данных</h1>
+        <select id="entity">
+          <option value="people">Люди</option>
+          <option value="films">Фильмы</option>
+          <option value="starships">Звездолеты</option>
+          <option value="vehicles">Транспортные средства</option>
+          <option value="species">Разновидность</option>
+          <option value="planets">Планеты</option>
+        </select>
+        <input type="number" id="entityId" placeholder="Введите ID">
+        <button id="fetchBtn">Получить данные</button>
+        <div id="result" class="result"></div>
+        <div id="error" class="error"></div>
+      </div>
+
+<script src="starwars.js"></script>
+</body>
+</html>
